@@ -1,3 +1,4 @@
+bits 32
 ; at the beginning
 
 push ebp ;save the caller's ebp

@@ -1,0 +1,14 @@
+     1                                  ; at the beginning
+     2                                  
+     3 00000000 55                      push ebp ;save the caller's ebp
+     4 00000001 89E5                    mov ebp, esp ;update ebp to work with parameteres and local variables
+     5 00000003 83EC10                  sub esp, 16 ;if there is 4 local variables
+     6                                  
+     7                                  
+     8                                  
+     9                                  ; before returning
+    10 00000006 89EC                    mov esp, ebp ; to clean stack
+    11 00000008 5D                      pop ebp ;restore the caller's ebp
+    12 00000009 C3                      ret
+    13                                  
+    14                                  
